@@ -2,4 +2,3 @@ mkdocs
 mkdocs-material
 pymdown-extensions
 mkdocs-roamlinks-plugin
-mkdocs-encryptcontent-plugin

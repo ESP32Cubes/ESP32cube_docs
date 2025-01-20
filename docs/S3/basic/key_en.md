@@ -1,4 +1,4 @@
-### BOOT-KEY Button
+## BOOT-KEY Button
 
 The ESP32-S3 is packaged in QFN56, with a total of 45 GPIO pins, ranging from GPIO0 to GPIO21, and then from GPIO26 to GPIO48. Theoretically, all IOs can be used as ordinary GPIOs or multiplexed for any peripheral function. However, some pins cannot be used for other purposes after being connected to FLASH and PSRAM.
 
@@ -14,7 +14,7 @@ The GPIO of ESP32 can be used for input and output, and can be configured with i
 
 Here we set the IO0 pin connected to the BOOT button as a GPIO interrupt to receive button requests.
 
-### Using the Example
+## Using the Example
 
 Copy the 【01-boot_key】 example provided by the development board to your experiment folder and open the project with VSCode.
 
@@ -34,7 +34,7 @@ GPIO[0] intr, val: 0
 GPIO[0] intr, val: 0
 ```
 
-### 4.2 Example Explanation
+## Example Explanation
 
 This example is relatively simple, with only one C file. We can click to open the main.c file and see that there are only about 40 lines of code in this file.
 
@@ -137,19 +137,19 @@ The code uses the GPIO peripheral, so we include the driver/gpio.h header file, 
 
 That's all for the introduction of this example program.
 
-### 4.3 例程制作过程[​](https://wiki.lckfb.com/zh-hans/szpi-esp32s3/beginner/key.html#_4-3-%E4%BE%8B%E7%A8%8B%E5%88%B6%E4%BD%9C%E8%BF%87%E7%A8%8B)
+## Example Project Explain
 
-总的来说，该例程是使用 IDF 例程中的 sample_project 工程（看工程名字就可以知道，这是一个“样例工程”）作为模板，参考例程是 IDF 例程中的 generic_gpio 例程，都是从这个例程中复制粘贴修改而来。
+In general, the routine is used in the IDF routine `sample_project` project (see the name of the project can know, this is a "`sample project`") as a template, the reference routine is the IDF routine `generic_gpio` routine, are copied and pasted from this routine modified.
 
-我们复制官方例程中的 sample_project 工程，工程路径为 examples\get-started\sample_project。把这个文件夹的名称修改为 01-boot_key，或者 boot_key。01 表示这是第 1 个例程，加 01 是为了工程例程多了以后看起来整洁，加不加都可以。修改后我的工程路径为 D:\esp32s3\01-boot_key。
+We copy the sample_project project in the official routine, the project path is `examples\ get-started\ sample_project`. Change the name of this folder to `01-boot_key`, or `boot_key`. `01` means that this is the first routine, and `01` is added to make the project routine look neat after more. You can add it or not. After modification, my project path is D:\ esp32s3\ 01-boot_key.
 
-使用 VSCode 打开 boot_key 这个文件夹。单击打开工程一级目录下的 CMakeLists.txt 文件（注意不是 main 目录下的），然后我们把工程名字修改为 gpio_key，保存后关闭此文件。
+Use VSCode to open `boot_key` this folder. Click to open the `CMakeLists.txt` file in the first-level directory of the project (note that it is not in the `main` directory), then we change the project name to `gpio_key`, save and close this file.
 
 ```c
 project(boot_key)
 ```
 
-点击打开 main.c 文件，发现里面只写了这么几行代码：
+Click to open the `main.c` file and find that there are only a few lines of code written in it:
 
 ```c
 #include <stdio.h>
@@ -160,13 +160,13 @@ void app_main(void)
 }
 ```
 
-我们现在需要实现按键中断，比较简单，所以在这个工程上写就可以了。
+We now need to implement key interrupts, which is relatively simple, so we can write it in this project.
 
-现在再打开一个 VSCode 软件，然后打开 esp-idf 整个工程文件夹，然后我们依次找到 examples\peripherals\gpio\generic_gpio 这个工程作为参考，注意不要修改这个工程中的内容和配置，只是作为参考。
+Now, open another VSCode software, then open the entire esp-idf project folder. Then, we will find the project `examples\peripherals\gpio\generic_gpio` one by one as a reference. Please note that do not modify the content and configuration in this project, just use it as a reference.
 
-我们单击 gpio_example_main.c 打开这个文件，找到 app_main 函数。
+We click on `gpio_example_main.c` to open this file and find the `app_main` function.
 
-复制它的前几行语句（第 80~93 行）到我们自己的 gpio_key 工程中，这几行语句如下所示：
+Copy the first few lines of its code (lines 80 - 93) to our own `gpio_key` project. These lines of code are shown as follows:
 
 ```c
 #include <stdio.h>
@@ -190,13 +190,13 @@ void app_main(void)
 }
 ```
 
-然后按照开发板上 BOOT 按键连接的是 GPIO0 进行修改。
+Then make modifications according to the fact that the BOOT button on the development board is connected to GPIO0.
 
-第 1 条语句，定义了一个 gpio_config_t 结构体变量。
+The first statement defines a `gpio_config_t` structure variable.
 
-第 2 条语句，定义引脚中断类型。开发板上的按键没有按下的时候是高电平，按下去以后是低电平，我们定义成下降沿中断。这里原来是 GPIO_INTR_DISABLE，表示中断关闭，这里我们修改为 GPIO_INTR_NEGEDGE，即下降沿中断。这些宏定义在 gpio_types.h 文件中被定义，我们在 gpio_example_main.c 文件中的 GPIO_INTR_DISABLE 上单击右键，然后选择“转到定义”，就可以找到这几个宏定义，如下所示：
+The second statement defines the pin interrupt type. When the button on the development board is not pressed, it is at a high level, and when it is pressed, it is at a low level. We define it as a falling edge interrupt. Originally, it was `GPIO_INTR_DISABLE`, which means the interrupt is disabled. Here, we change it to `GPIO_INTR_NEGEDGE`, that is, a falling edge interrupt. These macro definitions are defined in the `gpio_types.h` file. We can right-click on `GPIO_INTR_DISABLE` in the `gpio_example_main.c` file and select "Go to Definition" to find these macro definitions, as shown below:
 
-> 注意：这里是在 esp-idf 整个工程的这个 VSCode 里面单击右键“转到定义”，而不是在 boot_key 工程里面。
+> Note: Here, right-click and select "Go to Definition" in the entire esp-idf project in VSCode, not in the boot_key project.
 
 ```c
 typedef enum {
@@ -210,15 +210,15 @@ typedef enum {
 } gpio_int_type_t;
 ```
 
-第 3 条语句是配置模式，这里的模式是 GPIO_MODE_OUTPUT，我们修改为 GPIO_MODE_INPUT 输入模式。
+The third statement is for configuring the mode. Here, the mode is `GPIO_MODE_OUTPUT`, and we will modify it to `GPIO_MODE_INPUT` (input mode).
 
-第 4 条语句是配置选择哪个引脚，这里我们把 GPIO_OUTPUT_PIN_SEL 修改为 1<<GPIO_NUM_0，因为 BOOT 按键连接到了 GPIO0。
+The fourth statement is for configuring which pin to select. Here, we change `GPIO_OUTPUT_PIN_SEL` to `1<<GPIO_NUM_0` because the BOOT button is connected to GPIO0.
 
-第 5、6 条语句配置是否打开上下拉电阻，0 是关闭，1 是打开，我们把上拉打开。
+The fifth and sixth statements configure whether to turn on the pull-up or pull-down resistors. 0 means off, and 1 means on. We turn on the pull-up resistor.
 
-前面都是给结构体成员变量赋值，最后一句使用 gpio_config 函数进行配置。
+The previous parts are all about assigning values to the structure member variables, and the last statement uses the `gpio_config` function for configuration.
 
-改完以后的代码如下：
+The modified code is as follows:
 
 ```c
 void app_main(void)
@@ -240,7 +240,7 @@ void app_main(void)
 }
 ```
 
-上面的代码，总结来说一下，就是先定义一个 GPIO 结构体，然后给 GPIO 结构体成员变量赋值，然后使用 GPIO 配置函数配置 GPIO。给结构体成员变量赋值，也可以在定义的时候直接赋值，也就是可以把前面的代码改成如下所示代码。
+In summary, the above code first defines a GPIO structure, then assigns values to the member variables of the GPIO structure, and finally uses the GPIO configuration function to configure the GPIO. Assigning values to the structure member variables can also be done directly at the time of definition, that is, the previous code can be changed to the following code.
 
 ```c
 void app_main(void)
@@ -257,7 +257,7 @@ void app_main(void)
 }
 ```
 
-接下来，我们再复制 gpio_example_main.c 文件中的第 108~116 行代码到我们的 main.c 文件中，放到刚才复制的代码后面就行。
+Next, we will copy the code from lines 108 to 116 of the `gpio_example_main.c` file into our `main.c` file and place it right after the code we just copied.
 
 c
 
@@ -273,17 +273,17 @@ c
     gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
 ```
 
-接下来我们修改这几行语句。
+Next, we will modify these several lines of code.
 
-第 1 条代码，创建了一个队列，队列消息数量为 10，gpio_evt_queue 是队列句柄，一会儿需要我们在 main 函数外面定义。
+The first piece of code creates a queue, with the number of queue messages being 10. `gpio_evt_queue` is the queue handle, which needs to be defined outside the main function by us later.
 
-第 2 条代码，创建了一个任务，任务名称为 gpio_task_example。
+The second piece of code creates a task, and the task name is `gpio_task_example`.
 
-第 3 条代码，启动 GPIO 中断服务，其中 ESP_INTR_FLAG_DEFAULT 的值是 0，这个宏定义是在 gpio_example_main.c 文件中定义的，我们可以直接把这里改成 0，也可以把这个宏定义复制到我们的 main.c 文件中。
+The third piece of code starts the GPIO interrupt service. The value of `ESP_INTR_FLAG_DEFAULT` is 0. This macro definition is defined in the `gpio_example_main.c` file. We can directly change it to 0 here, or we can copy this macro definition to our `main.c` file.
 
-第 4 条代码，添加某个 GPIO 的中断，这里我们添加 GPIO0，第 1 个和第 3 个参数，都修改为 GPIO_NUM_0。第 1 个参数指定哪个 GPIO 产生中断。第 2 个参数是中断服务函数的名称，我们之后会以这个名称定义函数。第 3 个参数是中断服务函数的参数，我们定义了 GPIO_NUM_0，发生中断时，这个值将作为参数进入中断服务函数。
+The fourth piece of code adds an interrupt for a certain GPIO. Here, we add GPIO0. Both the first and third parameters are modified to `GPIO_NUM_0`. The first parameter specifies which GPIO generates the interrupt. The second parameter is the name of the interrupt service function, and we will define the function with this name later. The third parameter is the parameter of the interrupt service function. We defined `GPIO_NUM_0`, and when an interrupt occurs, this value will enter the interrupt service function as a parameter.
 
-修改后的代码如下：
+The modified code is as follows:
 
 ```c
 void app_main(void)
@@ -310,7 +310,7 @@ void app_main(void)
 }
 ```
 
-接下来，我们在 app_main 函数的上方添加队列、中断等相关的代码。复制 gpio_example_main.c 中的第 60~76 行到我们的 main.c 文件中，放到 app_main 函数的上方。
+Next, we'll add code related to queues, interrupts, etc. above the `app_main` function. Copy lines 60 - 76 from `gpio_example_main.c` and paste them into our `main.c` file, placing them above the `app_main` function. 
 
 ```c
 static QueueHandle_t gpio_evt_queue = NULL;
@@ -332,11 +332,9 @@ static void gpio_task_example(void* arg)
 }
 ```
 
-这些内容，不需要做修改。
+Next, we just need to add the required header files to our `main.c` file.
 
-接下来，我们再把需要的头文件添加到我们的 main.c 文件就可以了。
-
-我们复制 gpio_example_main.c 中的第 9~16 行到我们的 main.c 文件中，放到 main.c 文件的最上方。
+We copy lines 9 to 16 from `gpio_example_main.c` and paste them at the very top of our `main.c` file. 
 
 ```c
 #include <stdio.h>
@@ -349,28 +347,28 @@ static void gpio_task_example(void* arg)
 #include "driver/gpio.h"
 ```
 
-使用 printf 函数，需要添加 stdio.h 头文件。string.h 和 stdlib.h 我们这里用不着，可以去掉。接下来是 3 个 freeRTOS 的头文件，最后一个头文件是用于 gpio 的配置。
+To use the `printf` function, you need to include the `stdio.h` header file. We don't need `string.h` and `stdlib.h` here, so they can be removed. Next, there are three FreeRTOS header files, and the last header file is for the configuration of GPIO.
 
-操作完上面的代码，就可以编译下载看结果了。
+After operating on the above code, you can compile and download it to check the results.
 
-这里需要注意的是，menuconfig 里面，需要把 FLASH 大小设置为 16MB，默认是 2MB，其它不用修改。
+It should be noted that in `menuconfig`, you need to set the FLASH size to 16MB. The default is 2MB, and no other modifications are required.
 
-编译下载后，结果没有问题的话，使用 idf.py save-defconfig 命令生成 sdkconfig.defaults 文件。这个命令要打开“命令终端”执行，看结果的“串口终端”不行。打开“命令终端”的按钮如下所示：
+After compiling and downloading, if there are no problems with the results, use the `idf.py save-defconfig` command to generate the `sdkconfig.defaults` file. This command should be executed in the "command terminal", not in the "serial port terminal" for viewing the results. The button to open the "command terminal" is shown as follows: 
 
 ![[images/b60594b143792d5c4d1911f4a7389ca2_MD5.png]]
 
-打开终端后，输入 idf.py save-defconfig 命令。
+After opening the terminal, enter the `idf.py save-defconfig` command.
 
 ![[images/64f9d9a01c27658438c6266d32b59271_MD5.png]]
 
-回车执行命令后，会看到工程中多了一个 sdkconfig.defaults 文件。
+After pressing the Enter key to execute the command, you will notice that a new `sdkconfig.defaults` file has been added to the project.
 
 ![[images/0bbd185a5a09eb4929ba5660bbe39bf0_MD5.png]]
 
-点击打开 sdkconfig.defaults 文件，会看到里面的内容。这个文件里面包含了你对 menuconfig 的修改。
+Click to open the `sdkconfig.defaults` file, and you will be able to view its contents. This file contains the modifications you made to `menuconfig`.
 
-这时候，你可以把工程中配置和编译生成的文件夹全部去掉，最后的文件如下所示：
+At this point, you can remove all the folders generated during the configuration and compilation process in the project. The final files are as follows: 
 
 ![[images/c22cea6d041b3a69d72ea985c9cec83c_MD5.png]]
 
-使用 VSCode 重新打开工程，在选择目标芯片后，sdkconfig.defaults 文件里面的配置就配置到 menuconfig 里面了，省去了手动配置 menucofig。本例程只配置了 FLASH 大小，后面的例程中，menuconfig 里面配置的内容会越来越多，到那时，这个文件就显得很有必要了。
+Use VSCode to reopen the project. After selecting the target chip, the configuration in the `sdkconfig.defaults` file will be configured into menuconfig, eliminating the need to manually configure menucofig. This routine only configures the FLASH size. In subsequent routines, there will be more and more configuration content in menuconfig. At that time, this file will become necessary.

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S3/basic/key.md",
+                "file": "S3/basic/key_en.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "key"
+              "title": "key_en"
             }
           }
         ],
@@ -176,6 +176,7 @@
   },
   "active": "f474609ef5120274",
   "lastOpenFiles": [
+    "S3/basic/key.md",
     "S3/basic/key_en.md",
     "S3/basic/key copy.md",
     "images/7ad038ffab85d72a5ef1c3bff664d588_MD5.png",
@@ -184,7 +185,6 @@
     "images/64f9d9a01c27658438c6266d32b59271_MD5.png",
     "images/b60594b143792d5c4d1911f4a7389ca2_MD5.png",
     "S3/hardware.md",
-    "S3/basic/key.md",
     "S3/basic",
     "images/f07d88204eabc9141b63f05bc6b47b48_MD5.png",
     "images/3c5f42745830c7f6e3483ee552979229_MD5.png",
