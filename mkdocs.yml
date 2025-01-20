@@ -1,0 +1,8 @@
+site_name: ESP32Cube Docs
+site_url: https://docs.esp32cube.com
+theme:
+  name: material
+
+plugins:
+  - search
+  - roamlinks 
