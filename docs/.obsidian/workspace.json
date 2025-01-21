@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S3/hardware.md",
+                "file": "S3/basic/02attitude.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hardware"
-            }
-          },
-          {
-            "id": "f474609ef5120274",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "S3/basic/key_en.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "key_en"
+              "title": "02attitude"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -174,23 +159,28 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.1\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "f474609ef5120274",
+  "active": "4919a1fe95b74bac",
   "lastOpenFiles": [
+    "images/6859951dcf35d4bc596d8ceb87d60687_MD5.png",
+    "images/966ea7bd0e142004557c0120b0bd79f7_MD5.png",
+    "images/be69e1ebd76a862e0ad3d986147cd9f1_MD5.png",
+    "images/3920ab9595cbf1709d999d2c4011eb92_MD5.png",
+    "images/6c425de29cc3c55ec0b1efb6e03b8f6a_MD5.png",
+    "images/69b3b9de26ab12b028950ad138ff99d1_MD5.png",
+    "images/454dd799faa4de3001d7c129e251c303_MD5.png",
+    "S3/hardware.md",
+    "S3/basic/02attitude.md",
     "S3/basic/key.md",
+    "S3/basic/01key.md",
     "S3/basic/key_en.md",
+    "S3/basic/key_zh.md",
+    "S3/basic/attitude.md",
     "S3/basic/key copy.md",
     "images/7ad038ffab85d72a5ef1c3bff664d588_MD5.png",
     "images/c22cea6d041b3a69d72ea985c9cec83c_MD5.png",
     "images/0bbd185a5a09eb4929ba5660bbe39bf0_MD5.png",
     "images/64f9d9a01c27658438c6266d32b59271_MD5.png",
-    "images/b60594b143792d5c4d1911f4a7389ca2_MD5.png",
-    "S3/hardware.md",
     "S3/basic",
-    "images/f07d88204eabc9141b63f05bc6b47b48_MD5.png",
-    "images/3c5f42745830c7f6e3483ee552979229_MD5.png",
-    "images/40fe0ae44713b79d12a2cbd9db84c88e_MD5.png",
-    "images/a2d5eca2f19399fc7a44cc932c955403_MD5.png",
-    "images/b0ecf48c09eeaf3b7feb51b4fb68de0f_MD5.png",
     "images"
   ]
 }
