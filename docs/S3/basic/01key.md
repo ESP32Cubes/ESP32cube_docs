@@ -1,8 +1,8 @@
-## BOOT-KEY Button
+# BOOT-KEY Button
 
 The ESP32-S3 is packaged in QFN56, with a total of 45 GPIO pins, ranging from GPIO0 to GPIO21, and then from GPIO26 to GPIO48. Theoretically, all IOs can be used as ordinary GPIOs or multiplexed for any peripheral function. However, some pins cannot be used for other purposes after being connected to FLASH and PSRAM.
 
-The module model used on our development board is ESP32-S3-WROOM-1-N16R8. Its FLASH is 16MB and is connected to the ESP32 via 4-wire SPI. Its PSRAM is 8MB and is connected to the ESP32 via 8-wire SPI. The FLASH and PSRAM together occupy 12 IO pins. After excluding these pins, there are 33 IOs left.
+The module used on our development board is ESP32-S3-WROOM-1-N16R8. Its FLASH is 16MB and is connected to the ESP32 via 4-wire SPI. Its PSRAM is 8MB and is connected to the ESP32 via 8-wire SPI. The FLASH and PSRAM use 12 IO pins. So there are ==33 IOs== available for user applications.
 
 By referring to the schematic diagram of the development board, we can see the connection status of the ESP32 pins on the development board.
 
@@ -34,34 +34,90 @@ GPIO[0] intr, val: 0
 GPIO[0] intr, val: 0
 ```
 
-## Example Explanation
+## Code
 
-This example is relatively simple, with only one C file. We can click to open the main.c file and see that there are only about 40 lines of code in this file.
+This example is relatively simple, with only one C file. We can click to open the `main.c` file and see that there are only about 40 lines of code in this file.
 
-Let's start from the app_main function. (When you look at the code written by others for a microcontroller, first find the main function, and then look at the statements in the main function from top to bottom. In this way, you can quickly understand the program written by others.)
+Here is the code of the `main.c` file:
 
-The content of the app_main function is as follows:
+```c  title="main.c"
+#include <stdio.h>
+#include <inttypes.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "freertos/queue.h"
+#include "driver/gpio.h"
 
-```c
+static QueueHandle_t gpio_evt_queue = NULL;  // Define the queue handle
+
+// GPIO interrupt service routine
+static void IRAM_ATTR gpio_isr_handler(void* arg) 
+{
+    uint32_t gpio_num = (uint32_t) arg;  // Get the input argument
+    xQueueSendFromISR(gpio_evt_queue, &gpio_num, NULL); // Send the argument value to the queue
+}
+
+// GPIO task function
+static void gpio_task_example(void* arg)
+{
+    uint32_t io_num; // Define a variable to indicate which GPIO
+    for(;;) {
+        if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {  // Wait indefinitely for queue message
+            printf("GPIO[%"PRIu32"] intr, val: %d\n", io_num, gpio_get_level(io_num)); // Print relevant content
+        }
+    }
+}
+
 void app_main(void)
 {
     gpio_config_t io0_conf = {
-        .intr_type = GPIO_INTR_NEGEDGE, // Falling edge interrupt
+        .intr_type = GPIO_INTR_NEGEDGE, // Negative edge interrupt
         .mode = GPIO_MODE_INPUT, // Input mode
         .pin_bit_mask = 1<<GPIO_NUM_0, // Select GPIO0
         .pull_down_en = 0, // Disable internal pull-down
         .pull_up_en = 1 // Enable internal pull-up
     };
-    // Configure GPIO0 according to the above settings
+    // Configure GPIO according to the above configuration
     gpio_config(&io0_conf);
 
-    // Create a queue to handle GPIO events
+    // Create a queue to handle initial GPIO events
     gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
     // Start the GPIO task
     xTaskCreate(gpio_task_example, "gpio_task_example", 2048, NULL, 10, NULL);
-    // Create a GPIO interrupt service
+    // Install the GPIO interrupt service
     gpio_install_isr_service(0);
-    // Add an interrupt handler to GPIO0
+    // Add interrupt handler to GPIO0
+    gpio_isr_handler_add(GPIO_NUM_0, gpio_isr_handler, (void*) GPIO_NUM_0);
+}
+```
+
+## Code Explanation
+
+Let's start from the app_main function. (When you look at the code written by others for a microcontroller, first find the main function, and then look at the statements in the main function from top to bottom. In this way, you can quickly understand the program written by others.)
+
+The content of the app_main function is as follows:
+
+```c  linenums="1"
+
+void app_main(void)
+{
+    gpio_config_t io0_conf = {
+        .intr_type = GPIO_INTR_NEGEDGE, // Negative edge interrupt
+        .mode = GPIO_MODE_INPUT, // Input mode
+        .pin_bit_mask = 1<<GPIO_NUM_0, // Select GPIO0
+        .pull_down_en = 0, // Disable internal pull-down
+        .pull_up_en = 1 // Enable internal pull-up
+    };
+    // Configure GPIO according to the above configuration
+    gpio_config(&io0_conf);
+
+    // Create a queue to handle initial GPIO events
+    gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
+    // Start the GPIO task
+    xTaskCreate(gpio_task_example, "gpio_task_example", 2048, NULL, 10, NULL);
+    // Install the GPIO interrupt service
+    gpio_install_isr_service(0);
+    // Add interrupt handler to GPIO0
     gpio_isr_handler_add(GPIO_NUM_0, gpio_isr_handler, (void*) GPIO_NUM_0);
 }
 ```

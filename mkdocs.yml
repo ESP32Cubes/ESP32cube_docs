@@ -2,7 +2,25 @@ site_name: ESP32Cube Docs
 site_url: https://docs.esp32cube.com
 theme:
   name: material
-
+  features:
+    - content.code.copy
+    - content.code.annotate
 plugins:
   - search
-  - roamlinks 
+  - roamlinks
+  - git-revision-date-localized
+  
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences  

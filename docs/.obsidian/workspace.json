@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S3/basic/02attitude.md",
+                "file": "S3/basic/01key.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02attitude"
+              "title": "01key"
             }
           }
         ]
@@ -161,6 +161,7 @@
   },
   "active": "4919a1fe95b74bac",
   "lastOpenFiles": [
+    "S3/basic/02attitude.md",
     "images/6859951dcf35d4bc596d8ceb87d60687_MD5.png",
     "images/966ea7bd0e142004557c0120b0bd79f7_MD5.png",
     "images/be69e1ebd76a862e0ad3d986147cd9f1_MD5.png",
@@ -169,7 +170,6 @@
     "images/69b3b9de26ab12b028950ad138ff99d1_MD5.png",
     "images/454dd799faa4de3001d7c129e251c303_MD5.png",
     "S3/hardware.md",
-    "S3/basic/02attitude.md",
     "S3/basic/key.md",
     "S3/basic/01key.md",
     "S3/basic/key_en.md",
@@ -179,7 +179,6 @@
     "images/7ad038ffab85d72a5ef1c3bff664d588_MD5.png",
     "images/c22cea6d041b3a69d72ea985c9cec83c_MD5.png",
     "images/0bbd185a5a09eb4929ba5660bbe39bf0_MD5.png",
-    "images/64f9d9a01c27658438c6266d32b59271_MD5.png",
     "S3/basic",
     "images"
   ]

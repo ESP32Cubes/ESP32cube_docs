@@ -2,3 +2,4 @@ mkdocs
 mkdocs-material
 pymdown-extensions
 mkdocs-roamlinks-plugin
+mkdocs-git-revision-date-localized-plugin
