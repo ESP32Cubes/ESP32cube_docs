@@ -16,13 +16,7 @@ While Linux development requires virtual machines (often problematic for beginne
    ✅ Check "Add 'Open with Code' to Windows Explorer context menus"  
    ![[images/45e9a16c1277134aa67ec687eaf0f860_MD5.png]]
 
-### Step 2: Configure Chinese Language (Optional)
-For Chinese UI:
-1. Open Extensions (Ctrl+Shift+X)
-2. Search "Chinese (Simplified)" → Install  
-   ![[images/aa0b0764709cfea652192b5e16f608c2_MD5.png]]
-
-### Step 3: Install ESP-IDF Plugin
+### Step 2: Install ESP-IDF Plugin
 1. Search "ESP-IDF" in Extensions → Install  
    ![[images/711e0b342660dab8ca8a7a1ed7889e2a_MD5.png]]
 2. Verify installed plugins:  

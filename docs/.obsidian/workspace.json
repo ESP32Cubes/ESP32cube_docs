@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S3/Prepare/01 esp32 s3 dev board introduction.md",
+                "file": "S3/basic/Audio Output ES8311.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 esp32 s3 dev board introduction"
-            }
-          },
-          {
-            "id": "c9e3bc3d95a2e75d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "S3/Prepare/01 esp32 s3 dev board introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 esp32 s3 dev board introduction"
+              "title": "Audio Output ES8311"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 332.5
   },
   "right": {
     "id": "cf8f8c33ceb423e9",
@@ -175,11 +160,20 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.1\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "c9e3bc3d95a2e75d",
+  "active": "4919a1fe95b74bac",
   "lastOpenFiles": [
+    "S3/03_software.md",
+    "S3/02_hardware.md",
+    "S3/01_introduciton.md",
+    "S3/Prepare/03_develop_process.md",
     "S3/Prepare/02 idf install.md",
-    "S3/Prepare/03 develop process.md",
+    "S3/Prepare/02_idf_install.md",
+    "S3/basic/Audio Output ES8311.md",
     "S3/Prepare/01 esp32 s3 dev board introduction.md",
+    "S3/Prepare/01_esp32_s3_dev_board_introduction.md",
+    "S3/basic/02_attitude.md",
+    "S3/basic/01_key.md",
+    "S3/Prepare/03 develop process.md",
     "images/2b8e5c7a44cd780b3002b5a9d2ee1e27_MD5.png",
     "images/327ec9157ed4d24c0874c440b54d3d37_MD5.png",
     "images/45e9a16c1277134aa67ec687eaf0f860_MD5.png",
@@ -190,7 +184,6 @@
     "images/43c84f44e9aab07fe012e20009203867_MD5.png",
     "images/ff3265b80c6cba22b3c4272d9887eece_MD5.png",
     "images/711e0b342660dab8ca8a7a1ed7889e2a_MD5.png",
-    "S3/basic/Audio Output ES8311.md",
     "S3/Prepare",
     "S3/basic/02attitude.md",
     "S3/basic/01key.md",
