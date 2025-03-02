@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S3/basic/Audio Output ES8311.md",
+                "file": "S3/basic/01_key.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Audio Output ES8311"
+              "title": "01_key"
             }
           }
         ]
@@ -163,27 +163,27 @@
   "active": "4919a1fe95b74bac",
   "lastOpenFiles": [
     "S3/03_software.md",
-    "S3/02_hardware.md",
-    "S3/01_introduciton.md",
-    "S3/Prepare/03_develop_process.md",
-    "S3/Prepare/02 idf install.md",
     "S3/Prepare/02_idf_install.md",
-    "S3/basic/Audio Output ES8311.md",
-    "S3/Prepare/01 esp32 s3 dev board introduction.md",
+    "S3/Prepare/03_develop_process.md",
+    "S3/01_introduciton.md",
+    "S3/02_hardware.md",
+    "images/Pasted image 20250302192958.png",
+    "images/Pasted image 20250302192726.png",
+    "images/Pasted image 20250302192650.png",
+    "images/Pasted image 20250302192407.png",
+    "images/Pasted image 20250302192257.png",
+    "images/Pasted image 20250302191735.png",
+    "images/Pasted image 20250302191102.png",
     "S3/Prepare/01_esp32_s3_dev_board_introduction.md",
+    "images/Pasted image 20250302183727.png",
+    "images/8e00176850780fa8b3bc0e8580afaa60_MD5.png",
+    "images/c4634ad9a219cb955f56d891fadfefd5_MD5.png",
+    "S3/basic/Audio Output ES8311.md",
+    "S3/Prepare/02 idf install.md",
+    "S3/Prepare/01 esp32 s3 dev board introduction.md",
     "S3/basic/02_attitude.md",
     "S3/basic/01_key.md",
     "S3/Prepare/03 develop process.md",
-    "images/2b8e5c7a44cd780b3002b5a9d2ee1e27_MD5.png",
-    "images/327ec9157ed4d24c0874c440b54d3d37_MD5.png",
-    "images/45e9a16c1277134aa67ec687eaf0f860_MD5.png",
-    "images/aa0b0764709cfea652192b5e16f608c2_MD5.png",
-    "images/5d40c2a54bac26dac663c03341e6a08e_MD5.png",
-    "images/23636fc76cc42816f3325d565666391e_MD5.png",
-    "images/7c5f377856d80b472346a56645dd43bf_MD5.png",
-    "images/43c84f44e9aab07fe012e20009203867_MD5.png",
-    "images/ff3265b80c6cba22b3c4272d9887eece_MD5.png",
-    "images/711e0b342660dab8ca8a7a1ed7889e2a_MD5.png",
     "S3/Prepare",
     "S3/basic/02attitude.md",
     "S3/basic/01key.md",
@@ -199,7 +199,6 @@
     "S3/basic/key_en.md",
     "S3/basic/key_zh.md",
     "S3/basic/attitude.md",
-    "S3/basic/key copy.md",
     "S3/basic",
     "images"
   ]
