@@ -1,4 +1,4 @@
-# ESP32-S3 Development Board Introduction
+# Board Introduction
 
 The ESP32 S3 AI Voice Assistant Kit is a development board based on the ESP32-S3 chip, which is a high-performance, low-power, 32-bit microcontroller with integrated speech recognition, wake-word detection, and voice recognition capabilities. It is designed to be used in a wide range of applications, including voice-controlled home assistants, smart speakers, and smart watches.
 
