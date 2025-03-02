@@ -34,23 +34,9 @@
               "icon": "lucide-file",
               "title": "Audio Output ES8311"
             }
-          },
-          {
-            "id": "90382646ef5ab656",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "S3/basic/Audio Output ES8311.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Audio Output ES8311"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,23 +175,25 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.1\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "90382646ef5ab656",
+  "active": "034d356c2f5bda54",
   "lastOpenFiles": [
+    "S3/index.md",
+    "images/31302b6b6ec0ad80276e73fa62c75e1d_MD5.png",
+    "images/aa9613bcb9b8c42c6d5c36ef408ced6e_MD5.png",
+    "images/af71c9766cb978726f2bdcd12880a03c_MD5.png",
+    "images/b2db18fe0de6662544d18fd3f19b9937_MD5.png",
+    "index.md",
+    "S3/hardware.md",
+    "S3/basic/Audio Output ES8311.md",
     "internal radio.md",
     "images/Pasted image 20250216215034.png",
     "images/Pasted image 20250216214157.png",
-    "S3/basic/Audio Output ES8311.md",
     "images/Pasted image 20250216175759.png",
     "images/Pasted image 20250216112526.png",
     "images/Pasted image 20250216112437.png",
     "images/Pasted image 20250216112055.png",
-    "images/de8598aa13db49aee31ded4ac4527ca4_MD5.png",
-    "images/Pasted image 20250215222436.png",
     "S3/basic/02attitude.md",
-    "S3/hardware.md",
     "S3/basic/01key.md",
-    "images/6859951dcf35d4bc596d8ceb87d60687_MD5.png",
-    "images/966ea7bd0e142004557c0120b0bd79f7_MD5.png",
     "S3/basic/key.md",
     "S3/basic/key_en.md",
     "S3/basic/key_zh.md",
