@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S3/basic/01_key.md",
+                "file": "S3/00_ai_chat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_key"
+              "title": "00_ai_chat"
             }
           }
         ]
@@ -163,26 +163,33 @@
   "active": "4919a1fe95b74bac",
   "lastOpenFiles": [
     "S3/03_software.md",
+    "S3/application/00_internet_radio.md",
+    "index.md",
+    "S3/application",
+    "S3/00_ai_chat.md",
+    "S3/00_AI_Chat.md",
+    "AI Chat.md",
+    "S3/AI Chat.md",
+    "images/a2979cd9cd873c4a39a5cb85da30bfc1_MD5.png",
+    "images/4dcca9eafdce95d2838a0128c436242a_MD5.png",
+    "images/80469900a1ca75356df04ae61883512d_MD5.jpg",
+    "images/75cd33f7e7be183b7ecfd2b118adef79_MD5.png",
+    "images/ec3dacebac4fc85f444c93db9613e82d_MD5.jpg",
+    "images/7658f65974187cbfacf7216a10055d2e_MD5.png",
+    "images/666e13c9c5b3bc667e392cb828fcec6d_MD5.png",
+    "images/5e42fcafd0145f057e2831a4e30c74d8_MD5.png",
+    "images/40b536eadf67851d43f2828b3b52748b_MD5.png",
+    "images/460a28dc8ce1f62a53887825abf9b379_MD5.png",
+    "S3/basic/01_key.md",
     "S3/Prepare/02_idf_install.md",
     "S3/Prepare/03_develop_process.md",
     "S3/01_introduciton.md",
     "S3/02_hardware.md",
-    "images/Pasted image 20250302192958.png",
-    "images/Pasted image 20250302192726.png",
-    "images/Pasted image 20250302192650.png",
-    "images/Pasted image 20250302192407.png",
-    "images/Pasted image 20250302192257.png",
-    "images/Pasted image 20250302191735.png",
-    "images/Pasted image 20250302191102.png",
     "S3/Prepare/01_esp32_s3_dev_board_introduction.md",
-    "images/Pasted image 20250302183727.png",
-    "images/8e00176850780fa8b3bc0e8580afaa60_MD5.png",
-    "images/c4634ad9a219cb955f56d891fadfefd5_MD5.png",
     "S3/basic/Audio Output ES8311.md",
     "S3/Prepare/02 idf install.md",
     "S3/Prepare/01 esp32 s3 dev board introduction.md",
     "S3/basic/02_attitude.md",
-    "S3/basic/01_key.md",
     "S3/Prepare/03 develop process.md",
     "S3/Prepare",
     "S3/basic/02attitude.md",
@@ -193,12 +200,6 @@
     "S3/01 introduciton.md",
     "S3/02 hardware.md",
     "S3/hardware.md",
-    "index.md",
-    "internal radio.md",
-    "S3/basic/key.md",
-    "S3/basic/key_en.md",
-    "S3/basic/key_zh.md",
-    "S3/basic/attitude.md",
     "S3/basic",
     "images"
   ]
