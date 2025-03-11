@@ -5,16 +5,15 @@ This guide provides instructions for flashing the Xiaozhi AI terminal firmware t
 ## Download Firmware
 
 Download the latest firmware from GitHub:
-Release Page: https://github.com/78/xiaozhi-esp32/releases
+Release Page: [https://github.com/78/xiaozhi-esp32/releases](https://github.com/78/xiaozhi-esp32/releases)
 
-Download the zip file named:
-vx.x.x_lichuang-dev.zip
+Download the zip file named: `vx.x.x_lichuang-dev.zip`
 
-Extract the merged-binary.bin file from the zip package.
+Extract the `merged-binary.bin` file from the zip package.
 
 ## Flash Firmware to Development Board
 
-Online Flashing Tool: https://espressif.github.io/esp-launchpad/
+Online Flashing Tool: [https://espressif.github.io/esp-launchpad/](https://espressif.github.io/esp-launchpad/)
 
 1. Click the Connect menu in the top right corner of the DIY page (position 1).
 
@@ -40,7 +39,7 @@ Click the Choose File button in the middle of the DIY page (position 1), navigat
 
 2. Set Flash Address
 
-Enter 0x0 or 0 in the Flash Address input box (position 1). Make sure you can see the loaded bin file at position 2. If not, try importing it again following step 1.
+Enter `0x0` or `0` in the Flash Address input box (position 1). Make sure you can see the loaded bin file at position 2. If not, try importing it again following step 1.
 
 Since the Xiaozhi AI firmware is already merged into a single bin file (merged-binary.bin), no additional bin files are needed.
 
@@ -85,12 +84,12 @@ After flashing the firmware, keep the device powered on. It will enter network c
 
 1. Connect to the Xiaozhi-XXXX Hotspot
 
-Using your phone or computer, connect to the device's WiFi network (named Xiaozhi-XXXX). Select and connect to it. Wait a few seconds for the connection to establish. A configuration interface will open automatically.
+Using your phone or computer, connect to the device's WiFi network (named `Xiaozhi-XXXX`). Select and connect to it. Wait a few seconds for the connection to establish. A configuration interface will open automatically.
 
 ![[images/ec3dacebac4fc85f444c93db9613e82d_MD5.jpg]]![[images/80469900a1ca75356df04ae61883512d_MD5.jpg]]
 
 Note:
-If the browser doesn't automatically open to http://192.168.4.1, make sure you're still connected to the Xiaozhi-XXXX network and manually enter http://192.168.4.1 in your browser.
+If the browser doesn't automatically open to `http://192.168.4.1`, make sure you're still connected to the Xiaozhi-XXXX network and manually enter `http://192.168.4.1` in your browser.
 
 2. Select and Configure WiFi
 
@@ -113,3 +112,7 @@ If the credentials are correct, the device will connect to the WiFi network and 
 After restarting, the device will automatically connect to the configured WiFi network.
 
 If the configuration fails, please verify your WiFi name and password, then try again.
+
+## Talk to the Bot
+
+After the device connects to the WiFi network, you can now chat with the bot. Wake up the bot by saying "你好小智", or press the button on the right.
