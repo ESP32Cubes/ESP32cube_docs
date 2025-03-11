@@ -2,7 +2,7 @@
 
 The tutorial examples and code can be found in the following repositories:
 
-- [ESP32Cube_S3](https://github.com/ESP32Cubes/ESP32Cube_S3)
+[ESP32Cube_S3](https://github.com/ESP32Cubes/ESP32Cube_S3)
   
 ## Development Environment Setup
 

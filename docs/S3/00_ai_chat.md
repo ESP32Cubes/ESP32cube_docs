@@ -5,7 +5,9 @@ This guide provides instructions for flashing the Xiaozhi AI terminal firmware t
 ## Download Firmware
 
 Download the latest firmware from GitHub:
-Release Page: [https://github.com/78/xiaozhi-esp32/releases](https://github.com/78/xiaozhi-esp32/releases)
+Release Page: 
+
+[https://github.com/78/xiaozhi-esp32/releases](https://github.com/78/xiaozhi-esp32/releases)
 
 Download the zip file named: `vx.x.x_lichuang-dev.zip`
 
@@ -13,7 +15,9 @@ Extract the `merged-binary.bin` file from the zip package.
 
 ## Flash Firmware to Development Board
 
-Online Flashing Tool: [https://espressif.github.io/esp-launchpad/](https://espressif.github.io/esp-launchpad/)
+Online Flashing Tool: 
+
+[https://espressif.github.io/esp-launchpad/](https://espressif.github.io/esp-launchpad/)
 
 1. Click the Connect menu in the top right corner of the DIY page (position 1).
 
