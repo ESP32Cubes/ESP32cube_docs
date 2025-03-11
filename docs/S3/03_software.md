@@ -1,7 +1,8 @@
 # Software Development
 
 The tutorial examples and code can be found in the following repositories:
-- [ESP32-S3](https://github.com/esp32cube/s3)
+
+- [ESP32Cube_S3](https://github.com/ESP32Cubes/ESP32Cube_S3)
   
 ## Development Environment Setup
 
@@ -18,7 +19,7 @@ To get started, follow the steps below:
 
 ### Install VS Code
 
-Download and install the latest version of VS Code from the official website: https://code.visualstudio.com/
+Download and install the latest version of VS Code from the official website: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 ![[images/Pasted image 20250302191102.png]]
 
