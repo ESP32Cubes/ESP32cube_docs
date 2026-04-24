@@ -6,7 +6,7 @@
   "pathInTags": "fullDirPath",
   "downUnknown": false,
   "saveAttE": "obsFolder",
-  "realTimeUpdate": true,
+  "realTimeUpdate": false,
   "filesizeLimit": 0,
   "tryCount": 2,
   "realTimeUpdateInterval": 5,
@@ -23,5 +23,8 @@
   "PngToJpegLocal": false,
   "JpegQuality": 100,
   "DoNotCreateObsFolder": false,
-  "DateFormat": "YYYY MM DD"
+  "DateFormat": "YYYY MM DD",
+  "ImgCompressionType": "image/jpeg",
+  "ExcludedFoldersList": "",
+  "ExcludedFoldersListRegexp": ""
 }

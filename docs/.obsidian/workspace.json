@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6d524d9e0c63a4aa",
+        "id": "d08d34d3d407b20e",
         "type": "tabs",
         "children": [
           {
-            "id": "4919a1fe95b74bac",
+            "id": "f142f89c22b83942",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S3/00_ai_chat.md",
+                "file": "ESP32Cube/cmoca7chx00000alefakphrv7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_ai_chat"
+              "title": "cmoca7chx00000alefakphrv7"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ESP32Cube/a-led-matrix-message-board-with-esp32.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "a-led-matrix-message-board-with-esp32 的反向链接列表"
             }
           },
           {
@@ -151,56 +152,59 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "esp32cube-publish:发布到 ESP32Cube": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-local-images-plus:Local Images Plus  0.16.1\r\nLocalize attachments (plugin folder)": false
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "4919a1fe95b74bac",
+  "active": "f142f89c22b83942",
   "lastOpenFiles": [
-    "S3/application/未命名.md",
-    "S3/00_ai_chat.md",
-    "S3/03_software.md",
-    "S3/application/00_internet_radio.md",
-    "index.md",
+    "images/38y9as38y9as38y9.png",
+    "images/669708cc914f6f8bca44c4057ba6d0d9_MD5.png",
+    "ESP32Cube/cmoca7chx00000alefakphrv7.md",
+    "ESP32Cube/cmoc9p7qv00000albzeui4ybs.md",
+    "ESP32Cube/cmn2tqa15000aebxacrqvs72u.md",
+    "ESP32Cube/cmn2tq08y0003ebxa9muwtuqh.md",
+    "images/20260424_10_03_32.png",
+    "images/f4e13acfadc1cc15cabe0055d01a3750_MD5.png",
+    "ESP32Cube/cmnx9sho60000f1ztx7vwm5i4.md",
+    "ESP32Cube/cmoc73z0l00000bkq7yjxmno5.md",
+    "ESP32Cube/cmn2tpxfg0000ebxa0crt7mtq.md",
+    "ESP32Cube/esp32-hds10-condensation-sensor-guide.md",
+    "ESP32Cube/cmn2tskmt001lebxaqeujad0m.md",
+    "ESP32Cube/cmn2tsdlg001iebxav9s1ci0o.md",
+    "ESP32Cube/cmn2trigb0012ebxa4cudoflj.md",
+    "ESP32Cube/cmn2tramb000sebxa2wf66hd3.md",
+    "ESP32Cube/cmn2tt1z0001xebxav65w1xr5.md",
+    "ESP32Cube/cmn2tret4000webxa8v4ndoz3.md",
+    "ESP32Cube/cmn2tsphe001pebxa1cu5792y.md",
+    "ESP32Cube/cmn2tsux5001tebxa2etjxwfo.md",
+    "ESP32Cube/cmn2tq4ko0007ebxajvuju7wk.md",
+    "ESP32Cube/cmn2twezm003cebxa9haju0t3.md",
+    "ESP32Cube/cmn2trmdb0014ebxarpi70250.md",
+    "ESP32Cube/cmn2tqb7z000bebxai2fd3jiw.md",
+    "ESP32Cube/cmn2trdc4000vebxa73noo4c9.md",
+    "ESP32Cube/cmn2tr81p000oebxa7g0ry8y5.md",
+    "ESP32Cube/cmn2trrs20017ebxax4l9wr38.md",
+    "ESP32Cube/cmn2tr6z2000nebxaefd5k9jg.md",
+    "ESP32Cube/cmn2twgqo003debxaoo9wgg8p.md",
+    "images/ab22503ea5a532ada6bd1046967523fa_MD5.jpg",
+    "images/3c28b6868e1b5f228d1b417b25821bc9_MD5.png",
+    "images/61c86c54b72f6a711c533fd44184e89b_MD5.jpg",
+    "images/e6e539330ba7b4b4c7b0ac49a7fdd8dc_MD5.png",
+    "images/4944ab2b41e2e774d0f686e94798a92b_MD5.png",
+    "images/70d1ee569c5a3b5cdceb2abb11eb82c6_MD5.png",
+    "images/2a1adc012c126f83166f614ad816044f_MD5.png",
+    "ESP32Cube",
     "S3/application",
-    "S3/00_AI_Chat.md",
-    "AI Chat.md",
-    "S3/AI Chat.md",
-    "images/a2979cd9cd873c4a39a5cb85da30bfc1_MD5.png",
-    "images/4dcca9eafdce95d2838a0128c436242a_MD5.png",
-    "images/80469900a1ca75356df04ae61883512d_MD5.jpg",
-    "images/75cd33f7e7be183b7ecfd2b118adef79_MD5.png",
-    "images/ec3dacebac4fc85f444c93db9613e82d_MD5.jpg",
-    "images/7658f65974187cbfacf7216a10055d2e_MD5.png",
-    "images/666e13c9c5b3bc667e392cb828fcec6d_MD5.png",
-    "images/5e42fcafd0145f057e2831a4e30c74d8_MD5.png",
-    "images/40b536eadf67851d43f2828b3b52748b_MD5.png",
-    "images/460a28dc8ce1f62a53887825abf9b379_MD5.png",
-    "S3/basic/01_key.md",
-    "S3/Prepare/02_idf_install.md",
-    "S3/Prepare/03_develop_process.md",
-    "S3/01_introduciton.md",
-    "S3/02_hardware.md",
-    "S3/Prepare/01_esp32_s3_dev_board_introduction.md",
-    "S3/basic/Audio Output ES8311.md",
-    "S3/Prepare/02 idf install.md",
-    "S3/Prepare/01 esp32 s3 dev board introduction.md",
-    "S3/basic/02_attitude.md",
-    "S3/Prepare/03 develop process.md",
     "S3/Prepare",
-    "S3/basic/02attitude.md",
-    "S3/basic/01key.md",
-    "S3/03 software.md",
     "S3/03 software",
-    "S3/index.md",
-    "S3/01 introduciton.md",
-    "S3/02 hardware.md",
-    "S3/hardware.md",
     "S3/basic",
     "images"
   ]

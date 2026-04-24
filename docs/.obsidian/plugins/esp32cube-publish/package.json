@@ -1,0 +1,15 @@
+{
+  "name": "esp32cube-publish",
+  "version": "1.2.2",
+  "private": true,
+  "scripts": {
+    "build": "esbuild main.ts --bundle --outfile=main.js --external:obsidian --format=cjs --platform=node --target=es2018",
+    "dev": "esbuild main.ts --bundle --outfile=main.js --external:obsidian --format=cjs --platform=node --target=es2018 --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "esbuild": "^0.24.0",
+    "obsidian": "1.7.2",
+    "typescript": "^5.6.0"
+  }
+}

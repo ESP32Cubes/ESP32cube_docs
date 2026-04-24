@@ -1,0 +1,131 @@
+---
+title: AI Chat with Xiaozhi
+slug: 00aichat
+id: cmn8o26e10000eav2u2vt5eyw
+category: tutorial
+categorySlug: tutorial
+tags:
+  - AI
+  - Audio
+status: published
+excerpt: >-
+  This guide provides instructions for flashing the Xiaozhi AI terminal firmware
+  to your development board.
+updatedAt: '2026-04-23T22:46:00.540Z'
+---
+## Download Firmware
+
+Download the latest firmware from GitHub:
+Release Page:
+
+[https://github.com/78/xiaozhi-esp32/releases](https://github.com/78/xiaozhi-esp32/releases)
+
+Download the zip file named: `vx.x.x_lichuang-dev.zip`
+
+Extract the `merged-binary.bin` file from the zip package.
+
+## Flash Firmware to Development Board
+
+Online Flashing Tool:
+
+[https://espressif.github.io/esp-launchpad/](https://espressif.github.io/esp-launchpad/)
+
+1. Click the Connect menu in the top right corner of the DIY page (position 1).
+2. In the popup window, select your development board's COM port (e.g., USB Serial (COM12) - Paired). Note that the COM port number may vary depending on your device.
+3. Click the Connect button to authorize. This allows the website to access your development board's COM port.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601736256-publish-embed-1774601736256-0.png)
+
+4. Verify the Connection
+
+After connecting, you'll see "Connected to device: ESP32-S3" on the webpage, and the Connect menu will change to Disconnect, indicating a successful connection.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601737231-publish-embed-1774601737231-1.png)
+
+### Load and Configure the BIN Firmware
+
+1. Load the BIN file
+
+Click the Choose File button in the middle of the DIY page (position 1), navigate to your firmware folder, select the bin file (position 2), and click Open (position 3) to load the firmware.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601737738-publish-embed-1774601737738-2.png)
+
+2. Set Flash Address
+
+Enter `0x0` or `0` in the Flash Address input box (position 1). Make sure you can see the loaded bin file at position 2. If not, try importing it again following step 1.
+
+Since the Xiaozhi AI firmware is already merged into a single bin file (merged-binary.bin), no additional bin files are needed.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601738502-publish-embed-1774601738502-3.png)
+
+### Flash the Firmware and Verify
+
+1. Start Flashing
+
+Click the Program button (position 3) to start flashing the firmware to your device.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601739004-publish-embed-1774601739004-4.png)
+
+2. Monitor Progress
+
+The page will automatically switch to the Console tab, showing the flashing progress:
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601739548-publish-embed-1774601739548-5.png)
+
+3. Complete Flashing and Restart
+
+When Flashing is Complete:
+Once you see "100% complete" and "Leaving..." in the console, click the restart device button to reboot the development board.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601739982-publish-embed-1774601739982-6.png)
+
+Restart the Device:
+After flashing, the device won't restart automatically. Click the Reset Device button (position 1) and confirm by clicking the Confirm button (position 2) to restart the board and run the newly flashed firmware.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601740431-publish-embed-1774601740431-7.png)
+
+Verify Normal Operation:
+After restarting, the console will display the Xiaozhi AI terminal firmware's serial logs. When you see the network card address and WiFi configuration prompts, it indicates successful flashing.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601741370-publish-embed-1774601741370-8.png)
+
+## Network Configuration
+
+After flashing the firmware, keep the device powered on. It will enter network configuration mode.
+
+### Configuration Steps
+
+1. Connect to the Xiaozhi-XXXX Hotspot
+
+Using your phone or computer, connect to the device's WiFi network (named `Xiaozhi-XXXX`). Select and connect to it. Wait a few seconds for the connection to establish. A configuration interface will open automatically.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601742264-publish-embed-1774601742264-9.jpg)![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601742795-publish-embed-1774601742795-10.jpg)
+
+Note:
+If the browser doesn't automatically open to `http://192.168.4.1`, make sure you're still connected to the Xiaozhi-XXXX network and manually enter `http://192.168.4.1` in your browser.
+
+2. Select and Configure WiFi
+
+From the list of scanned 2.4G networks, select your home or office WiFi network. The SSID will be filled automatically.
+
+Enter the password for the selected network and click Connect to submit (passwords saved on your phone may be auto-filled).
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601743687-publish-embed-1774601743687-11.png)![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601744189-publish-embed-1774601744189-12.png)
+
+Note: The WiFi scanning page may take about 5 seconds to load. Please don't close the page.
+
+3. Connect and Restart
+
+On the network configuration page, select your WiFi name (2.4G only; iPhone hotspot users should enable "Maximum Compatibility"), enter the password, and click Connect.
+
+If the credentials are correct, the device will connect to the WiFi network and show a successful login message. It will automatically restart after 3 seconds.
+
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/1774601744627-publish-embed-1774601744627-13.png)
+
+After restarting, the device will automatically connect to the configured WiFi network.
+
+If the configuration fails, please verify your WiFi name and password, then try again.
+
+## Talk to the Bot
+
+After the device connects to the WiFi network, you can now chat with the bot. Wake up the bot by saying "你好小智", or press the button on the right.
