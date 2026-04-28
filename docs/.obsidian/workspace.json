@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ESP32Cube/未命名.md",
+                "file": "ESP32Cube/cmohy0y6000000bjvwqzftz48.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "cmohy0y6000000bjvwqzftz48"
             }
           }
         ]
@@ -152,6 +152,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "esp32cube-publish:发布到 ESP32Cube": false,
       "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -164,10 +165,15 @@
   },
   "active": "f142f89c22b83942",
   "lastOpenFiles": [
-    "ESP32Cube/cmocf099t00000al1q4ehaisg.md",
-    "ESP32Cube/未命名.md",
-    "images/14a824d858aa70ae6e6c33d7b0ea8f69_MD5.png",
+    "ESP32Cube/cmogwa5xr00000ajrljsv08fv.md",
     "images/esp32_dev.jpg",
+    "images/14a824d858aa70ae6e6c33d7b0ea8f69_MD5.png",
+    "ESP32Cube/cmohy0y6000000bjvwqzftz48.md",
+    "images/esp-claw.jpg",
+    "images/Pasted image 20260427154531.png",
+    "images/ed73d03eddeb850417866fd24a9d8102_MD5.png",
+    "images/d09605fad3bd3dc3bfb20ab67e3f80c0_MD5.png",
+    "ESP32Cube/cmocf099t00000al1q4ehaisg.md",
     "ESP32Cube/cmn2tpxfg0000ebxa0crt7mtq.md",
     "images/Image_fy21vwfy21vwfy21.png",
     "images/f5605ffd9d2b016ab0a8d5031462bade_MD5.png",
@@ -177,8 +183,6 @@
     "ESP32Cube/cmoc9p7qv00000albzeui4ybs.md",
     "ESP32Cube/cmn2tqa15000aebxacrqvs72u.md",
     "ESP32Cube/cmn2tq08y0003ebxa9muwtuqh.md",
-    "images/20260424_10_03_32.png",
-    "images/f4e13acfadc1cc15cabe0055d01a3750_MD5.png",
     "ESP32Cube/cmnx9sho60000f1ztx7vwm5i4.md",
     "ESP32Cube/cmoc73z0l00000bkq7yjxmno5.md",
     "ESP32Cube/esp32-hds10-condensation-sensor-guide.md",
@@ -196,9 +200,6 @@
     "ESP32Cube/cmn2tqb7z000bebxai2fd3jiw.md",
     "ESP32Cube/cmn2trdc4000vebxa73noo4c9.md",
     "ESP32Cube/cmn2tr81p000oebxa7g0ry8y5.md",
-    "ESP32Cube/cmn2trrs20017ebxax4l9wr38.md",
-    "images/ab22503ea5a532ada6bd1046967523fa_MD5.jpg",
-    "images/3c28b6868e1b5f228d1b417b25821bc9_MD5.png",
     "ESP32Cube",
     "S3/application",
     "S3/Prepare",

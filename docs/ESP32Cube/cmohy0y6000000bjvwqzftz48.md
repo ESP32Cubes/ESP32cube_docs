@@ -1,15 +1,21 @@
 ---
 title: ESP32Cube Development Guide
 slug: esp32cube-development-guide
-id: ""
+id: cmohy0y6000000bjvwqzftz48
+category: tutorial
 categorySlug: tutorial
 tags:
-  - esp32
-  - arduino
+  - ESP32
+  - Arduino
   - development
-excerpt: A comprehensive guide to getting started with the ESP32Cube development board, including hardware overview, pin functions, development options, and Arduino introduction for beginners.
-coverImage: ""
-status: draft
+status: published
+excerpt: >-
+  A comprehensive guide to getting started with the ESP32Cube development board,
+  including hardware overview, pin functions, development options, and Arduino
+  introduction for beginners.
+coverImage: >-
+  https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/b45feb85473b5af6e3f4b7503075030e3239c0c17365086a70db49da4c3eaa02.jpg
+updatedAt: '2026-04-28T01:25:05.920Z'
 ---
 This article introduces the ESP32Cube development board, explaining its key features, pin functions, available development methods, and provides a beginner-friendly overview of Arduino. Whether you're new to IoT or looking to prototype with ESP32, this guide helps you understand the essentials to start building projects.
 
@@ -17,7 +23,7 @@ This article introduces the ESP32Cube development board, explaining its key feat
 
 The ESP32 chip is designed for mobile devices, wearables, and IoT applications, integrating low-power Bluetooth and Wi-Fi. This makes ESP32 popular among DIY enthusiasts for its versatility in wireless connectivity.
 
-![ESP32 Development Board](images/14a824d858aa70ae6e6c33d7b0ea8f69_MD5.png)
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/23917d4a46ff74832b29169d3020934bb797a05ecdd3a6472ff9047db8048b48.png)
 
 ### Board Module Descriptions
 
@@ -35,7 +41,7 @@ The ESP32 chip has 48 pins with multiple functions, but not all are exposed on e
 
 The ESP32 chip features 34 programmable GPIO pins, each capable of multiple functions through pin multiplexing. Only one function is active per pin at a time. Pins can be configured as GPIO, ADC, UART, etc., in code. Some pins have specialized functions, making them suitable or unsuitable for specific projects.
 
-![ESP32 Pin Diagram](images/esp32_dev.jpg)
+![](https://pub-0b21780d5b2240ccb42d7b387bbbe8e4.r2.dev/uploads/b45feb85473b5af6e3f4b7503075030e3239c0c17365086a70db49da4c3eaa02.jpg)
 
 ## ESP32 Development Methods
 
